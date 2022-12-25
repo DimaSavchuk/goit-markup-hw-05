@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/modal.js"></script>
   </head>
   <body>
     <header class="header">
@@ -28,7 +27,7 @@
           </a>
           <ul class="menu-list list">
             <li class="item">
-              <a class="menu-item link" href="index.html">Studio</a>
+              <a class="menu-item current link" href="index.html">Studio</a>
             </li>
             <li class="item">
               <a class="menu-item link" href="portfolio.html">Portfolio</a>
@@ -58,9 +57,21 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal"> 
+          <div class="modal-btn">
+            <button data-modal-close class="modal-close">
+              <svg class="modal-close-icon">
+                <use href="./images/icons.svg#icon-closed">
+                  </use></button></div>
+        </div>
+      </div>
 
       <section class="features section">
         <div class="container">
@@ -401,5 +412,6 @@
         </div>
       </footer>
     </main>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
