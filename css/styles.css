@@ -234,6 +234,10 @@ body{
     background-color: var(--active-btn); 
 }
 
+.menu-item.current{
+    color: var(--active-btn);
+}
+
 
 /*#endregion -------------------- Header End -------------------- */
 
