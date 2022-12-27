@@ -252,6 +252,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    
     padding-top: 192px;
     padding-bottom: 192px;
 }
@@ -279,15 +280,16 @@ body{
     border-radius: 4px;
     border: 0;
     background: var(--iris); 
+    transition-duration: 250ms;
+    transition-property: background-color, box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus{
     background-color: var(--active-btn);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition-duration: 250ms;
-    transition-property: background-color, box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .hero-btn:active{
@@ -440,6 +442,9 @@ body{
     background-color: var(--iris);
     justify-content: center;
     align-items: center;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon{
@@ -450,9 +455,6 @@ body{
 .team-soc-link:hover,
 .team-soc-link:focus{
     background-color: var(--active-btn);
-    transition-duration: 250ms;
-    transition-property: background-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -478,29 +480,29 @@ body{
     align-items: center;
     border: 1px solid var(--light-slate);
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
 .customers-link:focus{
     border: 1px solid var(--active-btn);
-    transition-duration: 250ms;
-    transition-property: border;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon{
     width: 103px;
     height: 56px;
     fill: var(--light-slate);
+    transition-duration: 250ms;
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon{
     fill: var(--active-btn);
-    transition-duration: 250ms;
-    transition-property: fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*#endregion -------------------- Customers End -------------------- */
@@ -555,6 +557,9 @@ body{
     background-color: var(--slate);
     justify-content: center;
     align-items: center;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon{
@@ -565,9 +570,6 @@ body{
 .footer-soc-link:hover,
 .footer-soc-link:focus{
     background-color: var(--green);
-    transition-duration: 250ms;
-    transition-property: background-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*#endregion -------------------- Footer End -------------------- */
@@ -601,9 +603,6 @@ body{
 .content-link:focus,
 .content-link:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition-duration: 250ms;
-    transition-property: box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .image-overlay{
@@ -622,7 +621,7 @@ body{
     color: var(--cloud);
     background-color: var(--iris);
     transform: translateY(100%);
-    transition: transform 250ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .content-link:focus .overlay-dis,
@@ -646,7 +645,7 @@ body{
     border: 1px solid var(--cornflower);
     border-radius: 4px;
     transition-duration: 250ms;
-    transition-property: color, background;
+    transition-property: color, background, border, border-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -656,10 +655,7 @@ body{
     color: var(--white);
     background: var(--iris);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border: 1px solid var(--iris);
-    transition-duration: 250ms;
-    transition-property: color, background, box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: transparent;
 
 }
 
@@ -667,10 +663,7 @@ body{
     color: var(--white);
     background: var(--iris);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: 1px solid var(--iris);
-    transition-duration: 250ms;
-    transition-property: color, background, box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: transparent;
 }
 
 /*#endregion -------------------- Categories/Content End -------------------- */
