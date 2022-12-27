@@ -244,6 +244,9 @@ body{
 /*#region ---Hero--- */
 
 .hero {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
     background-image: linear-gradient(
     rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)
     ),
@@ -310,10 +313,14 @@ body{
     height: 100%;
     width: 100%;
     background-color: rgba(46, 47, 66, 0.4);
+    transition-duration: 250ms;
+    transition-property: opacity, visibility;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden{
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
 }
 
@@ -329,21 +336,25 @@ body{
     border-radius: 4px;
 }
 
-.modal-btn{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 24px;
-    margin-right: 24px;
-}
-
 .modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 24px;
+    margin-top: 24px;
     width: 24px;
     height: 24px;
+    text-align: center;
     border-radius: 50%;
     background: var(--cornflower);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-    
+}
+
+.modal-close:hover,
+.modal-close:focus{
+    background-color: var(--active-btn);
+    fill: var(--white);
+    border: transparent;
 
 }
 
@@ -351,6 +362,8 @@ body{
     width: 8px;
     height: 8px;
 }
+
+
 
 
 /*#endregion -------------------- Modal End -------------------- */
