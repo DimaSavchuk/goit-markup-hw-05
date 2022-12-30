@@ -170,14 +170,14 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--nuvy-blue);
+    transition-duration: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item:hover,
 .menu-item:focus {
-    color: var(--slate);
-    transition-duration: 250ms;
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--iris);
 }
 
 .menu-item:active {
@@ -209,14 +209,14 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
+    transition-duration: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item:hover,
 .contacts-item:focus {
     color: var(--iris);
-    transition-duration: 250ms;
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item{
@@ -298,9 +298,6 @@ body{
 .hero-btn:active{
     background: var(--active-btn);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition-duration: 250ms;
-    transition-property: background, box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*#endregion -------------------- Hero End -------------------- */
@@ -530,6 +527,7 @@ body{
 
 .footer-block{
     display: flex;
+    align-items: baseline;
     gap: 120px;
     margin-right: auto;
 }
@@ -658,7 +656,7 @@ body{
     border: 1px solid var(--cornflower);
     border-radius: 4px;
     transition-duration: 250ms;
-    transition-property: color, background, border, border-color;
+    transition-property: color, background, box-shadow, border-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
